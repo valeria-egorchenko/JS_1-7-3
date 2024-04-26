@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Пример скрипта</title>
+  <script type="text/javascript">
+
+    function newColor(color) {
+      alert("Вы выбрали " + color);   
+      document.bgColor = color;
+    }
+  </script>
+</head>
+
+<body>
+  <p>Выберите цвет фона</p>
+  <form>
+    <input type="button" value="серый" onClick="newColor('gray')">
+    <input type="button" value="светло-серый" onClick="newColor('lightgray')">
+  </form>
+</body>
+
+</html>
