@@ -1,17 +1,25 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Пример скрипта</title>
 </head>
 <body>
     <script>
-        function closeIt() {
-            close();
+        function openWin() {
+          myWin = window.open("page.html");
         }
-    </script>
-    <br>
-    <form style="text-align:center;">
-        <input type="button" value="Сейчас мы закроем это окно!" onClick="closeIt()"></input>
-    </form>
-</body>
-</html>
+        function closeIt() {
+          myWin.close();
+          }
+      </script>
+    </head>
+    <body>
+        <br>
+      <form style="text-align: center;">
+        <input type="button" value="Открываем новое окно" onclick="openWin()">
+        <br>
+        <br>
+        <input type="button" value="Сейчас мы закроем это окно!" onclick="closeIt()">
+      </form>
+    </body>
+    </html>
